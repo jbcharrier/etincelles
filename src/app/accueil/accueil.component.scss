@@ -1,0 +1,75 @@
+.accueil {
+  .baseline {
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent 0 40px,
+      #76e6ad 40px 80px
+    );
+    padding: 4rem 0;
+    font-size: 28px;
+    letter-spacing: 6px;
+    color: black;
+    font-weight: 100;
+  }
+  .citation {
+    background-color: #76e6ad;
+    padding: 4rem 0;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: white;
+    font-style: italic;
+    line-height: 3rem;
+    > p {
+      margin: unset;
+    }
+    i {
+      font-size: 3rem;
+    }
+    .revert {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+    }
+  }
+  .image1 {
+    background-image: url("./../../../public/image1.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .explanations {
+    > div {
+      padding: 2rem;
+      line-height: 2rem;
+      color: black;
+      letter-spacing: 2px;
+      font-weight: 100;
+      font-size: small;
+    }
+  }
+  .border-bottom-line {
+    > div {
+      border-bottom: 1px solid lightgray;
+    }
+  }
+  .for-who {
+    padding: 2rem;
+    background-color: #76e6ad;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: large;
+    h4 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0;
+    }
+    i {
+      font-size: xx-large;
+    }
+  }
+  .pedagogy{
+    margin: 3rem 0;
+  }
+}

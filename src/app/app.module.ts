@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HeaderComponent } from './header/header.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AccueilComponent } from './accueil/accueil.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatIconModule
   ],
   providers: [
     provideAnimationsAsync()
