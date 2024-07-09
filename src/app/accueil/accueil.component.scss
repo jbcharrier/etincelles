@@ -1,10 +1,10 @@
 .accueil {
   .baseline {
-    background: repeating-linear-gradient(
-      -45deg,
-      transparent 0 40px,
-      #76e6ad 40px 80px
-    );
+    // background: repeating-linear-gradient(
+    //   -45deg,
+    //   transparent 0 40px,
+    //   #76e6ad 40px 80px
+    // );
     padding: 4rem 0;
     font-size: 28px;
     letter-spacing: 6px;
@@ -12,7 +12,7 @@
     font-weight: 100;
   }
   .citation {
-    background-color: #76e6ad;
+    background-color: #66CAF0;
     padding: 4rem 0;
     font-size: 20px;
     letter-spacing: 6px;
@@ -41,10 +41,14 @@
     > div {
       padding: 2rem;
       line-height: 2rem;
-      color: black;
+      color: #2fb8ee;
       letter-spacing: 2px;
       font-weight: 100;
       font-size: small;
+      i {
+        color: #f2d170;
+        font-size: xx-large;
+      }
     }
   }
   .border-bottom-line {
@@ -52,24 +56,58 @@
       border-bottom: 1px solid lightgray;
     }
   }
-  .for-who {
+  // .for-who {
+  //   padding: 2rem;
+  //   background-color: #76e6ad;
+  //   color: white;
+  //   letter-spacing: 2px;
+  //   font-weight: 100;
+  //   font-size: large;
+  //   h4 {
+  //     margin-bottom: 1rem;
+  //   }
+  //   p {
+  //     margin: 0;
+  //   }
+  //   i {
+  //     font-size: xx-large;
+  //   }
+  // }
+  .pedagogy{
     padding: 2rem;
-    background-color: #76e6ad;
+    background-color: #66CAF0;
     color: white;
     letter-spacing: 2px;
     font-weight: 100;
     font-size: large;
-    h4 {
-      margin-bottom: 1rem;
+    h3 {
+      display: inline-block;
+      margin: 2rem 0 3rem 0;
+      color: #f2d170;
+      margin-left: 2rem;
     }
-    p {
-      margin: 0;
+    img{
+      width: 120px;
+      height: auto;
     }
-    i {
-      font-size: xx-large;
+    .pedagogy-text{
+      margin-right: unset;
+      margin-left: unset;
+      > div {
+        padding: 2rem 0;
+        line-height: 2rem;
+      }
     }
-  }
-  .pedagogy{
-    margin: 3rem 0;
+    ::ng-deep .mat-mdc-tab.mdc-tab .mdc-tab__text-label{
+      color: #f2d170  !important;
+      font-size: larger;
+      letter-spacing: 5px;
+    }
+    ::ng-deep .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+      color: white !important;
+    }
+    ::ng-deep .mat-mdc-tab .mdc-tab-indicator__content--underline {
+      border-color: white !important;
+    }
   }
 }

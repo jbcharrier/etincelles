@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { HeaderComponent } from './header/header.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [
     provideAnimationsAsync()
