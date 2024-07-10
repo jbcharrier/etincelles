@@ -1,3 +1,5 @@
+@import "./../../assets/styles/colors.scss";
+
 .accueil {
   .baseline {
     // background: repeating-linear-gradient(
@@ -10,9 +12,21 @@
     letter-spacing: 6px;
     color: black;
     font-weight: 100;
+    .logo img {
+      width: 10rem;
+      margin: 0 2rem;
+    }
+    .baseline-text {
+      display: flex;
+      align-items: center;
+      .since {
+        font-style: italic;
+        font-size: smaller;
+      }
+    }
   }
   .citation {
-    background-color: #66CAF0;
+    background-color: $base-color;
     padding: 4rem 0;
     font-size: 20px;
     letter-spacing: 6px;
@@ -37,16 +51,45 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .by-who {
+    padding: 4rem 0 2rem;
+    .by-who-container{
+      padding: 2rem;
+      background-color: $base-color;
+      .portrait {
+        img {
+          border-radius: 50%;
+          width: 12rem;
+          height: 12rem;
+          object-fit: cover;
+        }
+      }
+    }
+    .by-who-text{
+      display: flex;
+      align-items: center;
+      i{
+        color: $yellow;
+        font-size: xx-large;
+      }
+      p{
+        color: white;
+        line-height: 2rem;
+        letter-spacing: 1px;
+        margin: unset;
+      };
+    }
+  }
   .explanations {
     > div {
       padding: 2rem;
       line-height: 2rem;
-      color: #2fb8ee;
-      letter-spacing: 2px;
+      color: $base-color;
+      letter-spacing: 1px;
       font-weight: 100;
       font-size: small;
       i {
-        color: #f2d170;
+        color: $yellow;
         font-size: xx-large;
       }
     }
@@ -73,9 +116,9 @@
   //     font-size: xx-large;
   //   }
   // }
-  .pedagogy{
-    padding: 2rem;
-    background-color: #66CAF0;
+  .pedagogy {
+    padding: 4rem 2rem;
+    background-color: $base-color;
     color: white;
     letter-spacing: 2px;
     font-weight: 100;
@@ -83,14 +126,14 @@
     h3 {
       display: inline-block;
       margin: 2rem 0 3rem 0;
-      color: #f2d170;
+      color: $yellow;
       margin-left: 2rem;
     }
-    img{
+    img {
       width: 120px;
       height: auto;
     }
-    .pedagogy-text{
+    .pedagogy-text {
       margin-right: unset;
       margin-left: unset;
       > div {
@@ -98,16 +141,72 @@
         line-height: 2rem;
       }
     }
-    ::ng-deep .mat-mdc-tab.mdc-tab .mdc-tab__text-label{
-      color: #f2d170  !important;
+    ::ng-deep .mat-mdc-tab.mdc-tab .mdc-tab__text-label {
+      color: #f2d170 !important;
       font-size: larger;
       letter-spacing: 5px;
     }
-    ::ng-deep .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+    ::ng-deep .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
       color: white !important;
     }
     ::ng-deep .mat-mdc-tab .mdc-tab-indicator__content--underline {
       border-color: white !important;
+    }
+  }
+}
+
+.benefices {
+  margin-bottom: 4rem;
+  .img-class {
+    background-image: url("./../../../public/image2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .benefices-text {
+    padding: 2rem 1rem;
+    background-color: $base-color;
+    color: white;
+    h3 {
+      margin: 3rem 0;
+      color: $yellow;
+    }
+    p {
+      margin: 2rem 0;
+      span {
+        margin-right: 5px;
+        color: $yellow;
+      }
+    }
+    p:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .accueil {
+    .baseline {
+      .logo {
+        text-align: end;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .accueil {
+    .baseline{
+      .logo{
+        margin-bottom: 2rem;
+      }
+    }
+    .image1 {
+      height: 400px;
+    }
+  }
+  .benefices {
+    .img-class {
+      height: 500px;
     }
   }
 }

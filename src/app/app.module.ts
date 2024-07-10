@@ -8,12 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AccueilComponent
+    AccueilComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

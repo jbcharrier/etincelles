@@ -1,0 +1,16 @@
+@import "./../../assets/styles/colors.scss";
+
+.footer {
+  width: 100%;
+  color: $base-color;
+  text-align: end;
+  padding: 0 2rem;
+  border-top: 1px solid $light-color;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  background-color: white;
+  >p{
+    margin: 15px;
+  }
+}
