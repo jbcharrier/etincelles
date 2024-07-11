@@ -9,19 +9,21 @@ import { AccueilComponent } from './accueil/accueil.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FooterComponent } from './footer/footer.component';
+import { AtelierComponent } from './atelier/atelier.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AccueilComponent,
-    FooterComponent
+    FooterComponent,
+    AtelierComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
   ],
   providers: [
     provideAnimationsAsync()

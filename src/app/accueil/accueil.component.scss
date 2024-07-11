@@ -2,18 +2,13 @@
 
 .accueil {
   .baseline {
-    // background: repeating-linear-gradient(
-    //   -45deg,
-    //   transparent 0 40px,
-    //   #76e6ad 40px 80px
-    // );
     padding: 4rem 0;
     font-size: 28px;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     color: black;
     font-weight: 100;
     .logo img {
-      width: 10rem;
+      width: 12rem;
       margin: 0 2rem;
     }
     .baseline-text {
@@ -47,7 +42,7 @@
     }
   }
   .image1 {
-    background-image: url("./../../../public/image1.JPG");
+    background-image: url("./../../../public/accueil1.JPG");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -55,7 +50,7 @@
     padding: 4rem 0 2rem;
     .by-who-container{
       padding: 2rem;
-      background-color: $base-color;
+      background-color: #f6db8d;
       .portrait {
         img {
           border-radius: 50%;
@@ -85,12 +80,14 @@
       padding: 2rem;
       line-height: 2rem;
       color: $base-color;
-      letter-spacing: 1px;
       font-weight: 100;
       font-size: small;
       i {
         color: $yellow;
         font-size: xx-large;
+      }
+      p span {
+        font-weight: 700;
       }
     }
   }
@@ -157,14 +154,14 @@
 
 .benefices {
   margin-bottom: 4rem;
+  background-color: $base-color;
   .img-class {
-    background-image: url("./../../../public/image2.JPG");
+    background-image: url("./../../../public/accueil2.JPG");
     background-size: cover;
     background-repeat: no-repeat;
   }
   .benefices-text {
     padding: 2rem 1rem;
-    background-color: $base-color;
     color: white;
     h3 {
       margin: 3rem 0;
@@ -204,6 +201,9 @@
       height: 400px;
     }
   }
+}
+
+@media (max-width: 1199px) {
   .benefices {
     .img-class {
       height: 500px;

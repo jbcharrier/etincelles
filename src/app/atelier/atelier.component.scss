@@ -1,0 +1,40 @@
+@import "./../../assets/styles/colors.scss";
+
+.atelier {
+  .description {
+    background-color: $base-color;
+    > div {
+      padding: 4rem;
+      p {
+        color: white;
+      }
+    }
+    .photo1 {
+      background-image: url("./../../../public/atelier1.JPG");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    .logo {
+      background-image: url("./../../../public/logo1-detour.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .atelier {
+    .description {
+      .logo {
+        height: 10rem;
+        margin-top: 2rem;
+      }
+      .photo1 {
+        height: 15rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
