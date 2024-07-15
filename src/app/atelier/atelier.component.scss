@@ -22,6 +22,37 @@
       background-position: center;
     }
   }
+  .programme{
+    background-color: $yellow-background;
+    padding: 2rem;
+    h3{
+      color: white;
+      font-weight: bold;
+      margin-bottom: 2rem ;
+    }
+  }
+  .themes {
+    margin: 2rem 0;
+    .titre {
+      text-align: start;
+    }
+    > div.exemple{
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+      .card{
+        width: 80%;
+      }
+    }
+    .card-body{
+      background-color: $light-grey;
+    }
+  }
+  .avis{
+    button {
+      margin: 0 2rem;
+    }
+  }
 }
 
 @media (max-width: 1399px) {

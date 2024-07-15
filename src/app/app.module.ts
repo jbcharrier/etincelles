@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HeaderComponent } from './header/header.component';
 import { AccueilComponent } from './accueil/accueil.component';
-import {MatIconModule} from '@angular/material/icon';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { AtelierComponent } from './atelier/atelier.component';
+import { DialogAvisComponent } from './dialog-avis/dialog-avis.component';
 
 @NgModule({
   declarations: [
@@ -17,17 +20,18 @@ import { AtelierComponent } from './atelier/atelier.component';
     HeaderComponent,
     AccueilComponent,
     FooterComponent,
-    AtelierComponent
+    AtelierComponent,
+    DialogAvisComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatTabsModule,
+    MatDialogModule,
+    MatButtonModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
