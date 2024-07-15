@@ -6,7 +6,7 @@ import { AtelierComponent } from './atelier/atelier.component';
 const routes: Routes = [
 
   { path: 'accueil', component: AccueilComponent },
-  { path: 'atelier', component: AtelierComponent },
+  { path: 'contenu', component: AtelierComponent },
   { path: '**', redirectTo: 'accueil' },
 ];
 

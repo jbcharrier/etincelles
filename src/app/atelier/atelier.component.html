@@ -51,55 +51,65 @@
     </div>
   </div>
   <div class="row themes">
-    <div class="col-12 titre">
+    <div class="col-lg-12 titre">
       <h3>Exemples de thèmes</h3>
     </div>
-    <div class="col-lg-4 exemple">
-      <div class="card">
-        <img src="illus-livres.png" class="card-img-top" alt="image" />
-        <div class="card-body">
-          <h5 class="card-title">Espionnage :</h5>
-          <p class="card-text">
-            découverte des agences d'espionnage et des affaires célèbres comme
-            le Rainbow Warrior. Contexte de la Guerre Froide. Liens avec le
-            cinéma. Jeu de rôle "agent double".
-          </p>
-        </div>
-      </div>
+    <div class="col-lg-12 exemple">
+      <p>
+        <span>Espionnage :</span> découverte des agences d'espionnage et des
+        affaires célèbres comme le Rainbow Warrior. Contexte de la Guerre
+        Froide. Liens avec le cinéma. Jeu de rôle "agent double".
+      </p>
+      <p>
+        <span>Guerre en Ukraine :</span> retour sur les origines du conflit à
+        travers des articles et de courtes vidéos, adaptés à l’âge des élèves ;
+        comment les journalistes couvrent le conflit et découverte des
+        protagonistes.
+      </p>
+      <p>
+        <span>Animaux :</span> de Laïka à Hachiko, en passant par Cerbère, une
+        galerie d'animaux célèbres, réels ou légendaires, en s'appuyant sur le
+        travail de Michel Pastoureau.
+      </p>
     </div>
-    <div class="col-lg-4 exemple">
-      <div class="card">
-        <img src="illus-israel.png" class="card-img-top" alt="image" />
-        <div class="card-body">
-          <h5 class="card-title">Guerre en Ukraine :</h5>
-          <p class="card-text">
-            retour sur les origines du conflit à travers des articles et de
-            courtes vidéos, adaptés à l’âge des élèves ; comment les
-            journalistes couvrent le conflit et découverte des protagonistes.
-          </p>
-        </div>
+    <div class="col-lg-12 illustration">
+      <div class="col-lg-12 titre">
+        <h3>Exemples de documents pour les élèves</h3>
       </div>
-    </div>
-    <div class="col-lg-4 exemple">
-      <div class="card">
-        <img src="illus-aventuriers.png" class="card-img-top" alt="image" />
-        <div class="card-body">
-          <h5 class="card-title">Animaux :</h5>
-          <p class="card-text">
-            de Laïka à Hachiko, en passant par Cerbère, une galerie d'animaux
-            célèbres, réels ou légendaires, en s'appuyant sur le travail de
-            Michel Pastoureau.
-          </p>
+      <div class="row">
+        <div class="col-lg-6 image">
+          <div class="card" style="width: 80%">
+            <img
+              src="illus-livres.png"
+              class="card-img-top"
+              alt="image illustration"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6 image">
+          <div class="card" style="width: 80%">
+            <img
+              src="illus-israel.png"
+              class="card-img-top"
+              alt="image illustration"
+            />
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="row avis">
     <div class="col-12">
-      <h3>Exemples de thèmes</h3>
-      <button mat-raised-button (click)="openDialog(0)">Lire le témoignage 1</button>
-      <button mat-raised-button (click)="openDialog(1)">Lire le témoignage 2</button>
-      <button mat-raised-button (click)="openDialog(2)">Lire le témoignage 3</button>
+      <h3>Ils recommandent :</h3>
+      <button mat-raised-button (click)="openDialog(0)">
+        Lire le témoignage de {{ data[0].name }}
+      </button>
+      <button mat-raised-button (click)="openDialog(1)">
+        Lire le témoignage de {{ data[1].name }}
+      </button>
+      <button mat-raised-button (click)="openDialog(2)">
+        Lire le témoignage de {{ data[2].name }}
+      </button>
     </div>
   </div>
 </div>

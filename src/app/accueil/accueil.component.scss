@@ -1,23 +1,29 @@
 @import "./../../assets/styles/colors.scss";
 
 .accueil {
-  .baseline {
-    padding: 4rem 0;
-    font-size: 28px;
-    letter-spacing: 5px;
-    color: black;
-    font-weight: 100;
+  // .baseline {
+  //   padding: 4rem 0;
+  //   font-size: 28px;
+  //   letter-spacing: 5px;
+  //   color: black;
+  //   font-weight: 100;
+  //   .logo img {
+  //     width: 12rem;
+  //     margin: 0 2rem;
+  //   }
+  //   .baseline-text {
+  //     display: flex;
+  //     align-items: center;
+  //     .since {
+  //       font-style: italic;
+  //       font-size: smaller;
+  //     }
+  //   }
+  // }
+  .logo-container {
     .logo img {
-      width: 12rem;
-      margin: 0 2rem;
-    }
-    .baseline-text {
-      display: flex;
-      align-items: center;
-      .since {
-        font-style: italic;
-        font-size: smaller;
-      }
+      width: 30%;
+      margin: 2rem;
     }
   }
   .citation {
@@ -30,6 +36,9 @@
     line-height: 3rem;
     > p {
       margin: unset;
+      &.normal{
+        font-style: normal;
+      }
     }
     i {
       font-size: 3rem;
@@ -48,7 +57,7 @@
   }
   .by-who {
     padding: 4rem 0 2rem;
-    .by-who-container{
+    .by-who-container {
       padding: 2rem;
       background-color: #f6db8d;
       .portrait {
@@ -60,19 +69,19 @@
         }
       }
     }
-    .by-who-text{
+    .by-who-text {
       display: flex;
       align-items: center;
-      i{
+      i {
         color: $yellow;
         font-size: xx-large;
       }
-      p{
+      p {
         color: white;
         line-height: 2rem;
         letter-spacing: 1px;
         margin: unset;
-      };
+      }
     }
   }
   .explanations {
@@ -192,9 +201,14 @@
 
 @media (max-width: 991px) {
   .accueil {
-    .baseline{
-      .logo{
+    .baseline {
+      .logo {
         margin-bottom: 2rem;
+      }
+    }
+    .logo-container {
+      .logo img {
+        width: 60%;
       }
     }
     .image1 {
@@ -204,9 +218,26 @@
 }
 
 @media (max-width: 1199px) {
-  .benefices {
-    .img-class {
-      height: 500px;
+  .accueil {
+    .benefices {
+      .img-class {
+        height: 500px;
+      }
+    }
+    .logo-container {
+      .logo img {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .accueil {
+    .logo-container {
+      .logo img {
+        width: 80%;
+      }
     }
   }
 }

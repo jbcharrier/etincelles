@@ -22,35 +22,47 @@
       background-position: center;
     }
   }
-  .programme{
+  .programme {
     background-color: $yellow-background;
     padding: 2rem;
-    h3{
-      color: white;
+    color: white;
+    h3 {
       font-weight: bold;
-      margin-bottom: 2rem ;
+      margin-bottom: 2rem;
     }
   }
   .themes {
+    color: $base-color;
     margin: 2rem 0;
-    .titre {
-      text-align: start;
+    .titre{
+      margin-bottom: 1rem;
     }
-    > div.exemple{
-      display: flex;
-      justify-content: center;
-      margin: 2rem 0;
-      .card{
-        width: 80%;
+    .exemple{
+      span{
+        font-weight: bold;
       }
     }
-    .card-body{
-      background-color: $light-grey;
+    .illustration{
+      margin: 2rem 0;
+      .titre{
+        margin-bottom: 1rem;
+      }
+      .image{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+      }
     }
   }
-  .avis{
+  .avis {
+    background-color: $base-color;
+    padding: 2rem;
+    h3 {
+      margin-bottom: 2rem;
+      color: white;
+    }
     button {
-      margin: 0 2rem;
+      margin: 1rem;
     }
   }
 }
