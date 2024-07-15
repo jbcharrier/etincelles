@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { AtelierComponent } from './atelier/atelier.component';
 import { DialogAvisComponent } from './dialog-avis/dialog-avis.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { ValeursComponent } from './valeurs/valeurs.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { DialogAvisComponent } from './dialog-avis/dialog-avis.component';
     FooterComponent,
     AtelierComponent,
     DialogAvisComponent,
+    InscriptionComponent,
+    ValeursComponent,
   ],
   imports: [
     BrowserModule,
