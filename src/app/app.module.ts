@@ -15,6 +15,7 @@ import { AtelierComponent } from './atelier/atelier.component';
 import { DialogAvisComponent } from './dialog-avis/dialog-avis.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ValeursComponent } from './valeurs/valeurs.component';
+import { FormulesComponent } from './formules/formules.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ValeursComponent } from './valeurs/valeurs.component';
     DialogAvisComponent,
     InscriptionComponent,
     ValeursComponent,
+    FormulesComponent,
   ],
   imports: [
     BrowserModule,

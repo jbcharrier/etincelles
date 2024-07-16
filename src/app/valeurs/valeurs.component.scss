@@ -29,6 +29,10 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      p:last-of-type{
+        margin-top: 1rem;
+        font-style: italic;
+      }
     }
     .image{
       display: flex;

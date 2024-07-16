@@ -4,11 +4,13 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { AtelierComponent } from './atelier/atelier.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ValeursComponent } from './valeurs/valeurs.component';
+import { FormulesComponent } from './formules/formules.component';
 
 const routes: Routes = [
 
   { path: 'accueil', component: AccueilComponent },
   { path: 'contenu', component: AtelierComponent },
+  { path: 'formules', component: FormulesComponent },
   { path: 'valeurs', component: ValeursComponent },
   { path: 'inscription', component: InscriptionComponent },
   { path: '**', redirectTo: 'accueil' },
