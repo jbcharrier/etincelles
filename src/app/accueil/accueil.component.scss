@@ -1,25 +1,6 @@
 @import "./../../assets/styles/colors.scss";
 
 .accueil {
-  // .baseline {
-  //   padding: 4rem 0;
-  //   font-size: 28px;
-  //   letter-spacing: 5px;
-  //   color: black;
-  //   font-weight: 100;
-  //   .logo img {
-  //     width: 12rem;
-  //     margin: 0 2rem;
-  //   }
-  //   .baseline-text {
-  //     display: flex;
-  //     align-items: center;
-  //     .since {
-  //       font-style: italic;
-  //       font-size: smaller;
-  //     }
-  //   }
-  // }
   .logo-container {
     .logo img {
       width: 30%;
@@ -36,7 +17,7 @@
     line-height: 3rem;
     > p {
       margin: unset;
-      &.normal{
+      &.normal {
         font-style: normal;
       }
     }
@@ -51,7 +32,7 @@
     }
   }
   .image1 {
-    background-image: url("./../../../public/accueil1.JPG");
+    background-image: url("./../../../public/accueil1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -105,23 +86,7 @@
       border-bottom: 1px solid lightgray;
     }
   }
-  // .for-who {
-  //   padding: 2rem;
-  //   background-color: #76e6ad;
-  //   color: white;
-  //   letter-spacing: 2px;
-  //   font-weight: 100;
-  //   font-size: large;
-  //   h4 {
-  //     margin-bottom: 1rem;
-  //   }
-  //   p {
-  //     margin: 0;
-  //   }
-  //   i {
-  //     font-size: xx-large;
-  //   }
-  // }
+
   .pedagogy {
     padding: 4rem 2rem;
     background-color: $base-color;
@@ -165,7 +130,7 @@
   margin-bottom: 4rem;
   background-color: $base-color;
   .img-class {
-    background-image: url("./../../../public/accueil2.JPG");
+    background-image: url("./../../../public/accueil2.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -199,24 +164,6 @@
   }
 }
 
-@media (max-width: 991px) {
-  .accueil {
-    .baseline {
-      .logo {
-        margin-bottom: 2rem;
-      }
-    }
-    .logo-container {
-      .logo img {
-        width: 60%;
-      }
-    }
-    .image1 {
-      height: 400px;
-    }
-  }
-}
-
 @media (max-width: 1199px) {
   .accueil {
     .benefices {
@@ -232,11 +179,49 @@
   }
 }
 
+@media (max-width: 991px) {
+  .accueil {
+    .baseline {
+      .logo {
+        margin-bottom: 2rem;
+      }
+    }
+    .logo-container {
+      .logo img {
+        width: 60%;
+      }
+    }
+    .image1 {
+      height: 400px;
+    }
+    .benefices {
+      .img-class {
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .accueil {
+    .benefices {
+      .img-class {
+        height: 350px;
+      }
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .accueil {
     .logo-container {
       .logo img {
         width: 80%;
+      }
+    }
+    .benefices {
+      .img-class {
+        height: 250px;
       }
     }
   }
