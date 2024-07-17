@@ -47,6 +47,7 @@
           width: 12rem;
           height: 12rem;
           object-fit: cover;
+          margin-bottom: 1rem;
         }
       }
     }
@@ -58,6 +59,7 @@
         font-size: xx-large;
       }
       p {
+        font-size: 20px;
         color: white;
         line-height: 2rem;
         letter-spacing: 1px;
@@ -71,7 +73,7 @@
       line-height: 2rem;
       color: $base-color;
       font-weight: 100;
-      font-size: small;
+      font-size:medium;
       i {
         color: $yellow;
         font-size: xx-large;
