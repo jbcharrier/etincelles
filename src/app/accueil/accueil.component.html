@@ -75,7 +75,7 @@
         <img src="logo1-detour.png" alt="" />
         <h3>Pédagogie des ateliers</h3>
       </div>
-      <mat-tab-group>
+      <mat-tab-group *ngIf="!onMobile; else onMobileTemplate">
         <mat-tab label="Confiance">
           <div class="row justify-content-center pedagogy-text">
             <div class="col-8">
@@ -106,7 +106,7 @@
             </div>
           </div></mat-tab
         >
-        <mat-tab label="Collectif ">
+        <mat-tab label="Collectif">
           <div class="row justify-content-center pedagogy-text">
             <div class="col-8">
               S’appuyer sur la dynamique de groupe pour créer une émulation
@@ -115,6 +115,61 @@
           </div></mat-tab
         >
       </mat-tab-group>
+      <ng-template #onMobileTemplate>
+        <div class="row justify-content-center pedagogy-mobile">
+          <div class="col-sm-8">
+            <div class="card">
+              <h4 class="card-header">Confiance</h4>
+              <div class="card-body">
+                <p class="card-text">
+                  Prendre les élèves au sérieux est essentiel. Ils sont capables
+                  de comprendre tous les sujets, même ceux des “grands”, tels
+                  que l’actualité internationale, la géopolitique, l’ethnologie…
+                  s’ils sont expliqués avec clarté.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="card">
+              <h4 class="card-header">Curiosité</h4>
+              <div class="card-body">
+                <p class="card-text">
+                  Susciter un déclic en s’appuyant sur des récits haletants, les
+                  vies de personnages historiques et des anecdotes amusantes.
+                  Utiliser des méthodes ludiques (quiz, jeux de rôle, résumés en
+                  binôme) pour éveiller l'intérêt des élèves.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="card">
+              <h4 class="card-header">Diversité</h4>
+              <div class="card-body">
+                <p class="card-text">
+                  Varier les sujets et les modalités d'apprentissage :
+                  travailler seul, à deux, en groupe. Croiser les points de vue
+                  et faire le lien avec le programme scolaire. Montrer des
+                  cartes, images et courtes vidéos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="card">
+              <h4 class="card-header">Collectif</h4>
+              <div class="card-body">
+                <p class="card-text">
+                  S’appuyer sur la dynamique de groupe pour créer une émulation
+                  positive. Le travail collectif permet à chacun de se
+                  surpasser.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
     </div>
   </div>
   <div class="row justify-content-center benefices">

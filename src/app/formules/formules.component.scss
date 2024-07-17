@@ -1,11 +1,21 @@
 @import "./../../assets/styles/colors.scss";
 
 .formules {
-  background-color: $base-color;
-  .family {
+  .family, .etablissements {
+    padding: 2rem;
+    background-color: $base-color;
     h3 {
       color: white;
       margin: 3rem;
+    }
+    h4.mention{
+      margin-top: 3rem;
+      font-style: italic;
+      span {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $base-color
+      }
     }
     .first,
     .second {
@@ -28,5 +38,8 @@
         }
       }
     }
+  }
+  .etablissements{
+    background-color: $yellow-background;
   }
 }

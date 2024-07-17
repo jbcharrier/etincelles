@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-accueil',
@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrl: './accueil.component.scss'
 })
 export class AccueilComponent {
+  public screenWidth: any;
+  public onMobile: boolean = false;
+
+  ngOnInit() {
+    this.screenWidth = window.innerWidth;
+    this.evaluateMobile()
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = window.innerWidth;
+    this.evaluateMobile();
+  }
+
+  evaluateMobile(){
+    this.onMobile = this.screenWidth < 746;
+  }
 
 }

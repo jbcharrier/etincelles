@@ -14,12 +14,12 @@ export class AtelierComponent {
     {
       name: 'Valérie F.',
       citation:
-        'Notre fils a adoré les deux années culture générale en CM1 et en CM2 avec Olivier. Il a réussi à l’intéresser à beaucoup de sujets, et cela suscite de bonnes discussions à la maison',
+        'Notre fils a adoré les deux années culture générale en CM1 et en CM2 avec Olivier. Il a réussi à l’intéresser à beaucoup de sujets, et cela suscite de bonnes discussions à la maison.',
     },
     {
       name: 'Evelyne D.',
       citation:
-        'Ma fille et quatre de ses amis ont suivi l’atelier en classe de seconde. Elle a gagné en maturité intellectuelle et suit désormais l’actualité. L’atelier prépare bien pour l’option HGGSP en 1ère',
+        'Ma fille et quatre de ses amis ont suivi l’atelier en classe de seconde. Elle a gagné en maturité intellectuelle et suit désormais l’actualité. L’atelier prépare bien pour l’option HGGSP en 1ère.',
     },
     {
       name: 'Pierre R., CM2',

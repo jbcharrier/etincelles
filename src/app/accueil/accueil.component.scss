@@ -124,6 +124,17 @@
       border-color: white !important;
     }
   }
+  .pedagogy-mobile{
+    > div{
+      margin: 1rem;
+      h4{
+        color: $yellow
+      }
+      p{
+        color: $base-color
+      }
+    }
+  }
 }
 
 .benefices {
