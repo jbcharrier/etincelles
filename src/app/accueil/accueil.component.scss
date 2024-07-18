@@ -102,7 +102,7 @@
       color: $yellow;
       margin-left: 2rem;
     }
-    img {
+    img.logo {
       width: 120px;
       height: auto;
     }
@@ -124,6 +124,12 @@
     }
     ::ng-deep .mat-mdc-tab .mdc-tab-indicator__content--underline {
       border-color: white !important;
+    }
+    .garanties{
+      background-image: url(./../../../public/garanties.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
     }
   }
   .pedagogy-mobile{
@@ -211,6 +217,10 @@
       .img-class {
         height: 400px;
       }
+    }
+    .garanties{
+      margin-top: 3rem;
+      height: 300px;
     }
   }
 }
