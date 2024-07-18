@@ -12,5 +12,9 @@
   background-color: white;
   >p{
     margin: 15px;
+    span{
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 }

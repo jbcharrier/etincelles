@@ -5,6 +5,7 @@ import { AtelierComponent } from './atelier/atelier.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ValeursComponent } from './valeurs/valeurs.component';
 import { FormulesComponent } from './formules/formules.component';
+import { CgvComponent } from './cgv/cgv.component';
 
 const routes: Routes = [
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'formules', component: FormulesComponent },
   { path: 'valeurs', component: ValeursComponent },
   { path: 'inscription', component: InscriptionComponent },
+  { path: 'cgv', component: CgvComponent },
   { path: '**', redirectTo: 'accueil' },
 ];
 

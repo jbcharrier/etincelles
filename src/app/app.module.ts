@@ -16,6 +16,7 @@ import { DialogAvisComponent } from './dialog-avis/dialog-avis.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ValeursComponent } from './valeurs/valeurs.component';
 import { FormulesComponent } from './formules/formules.component';
+import { CgvComponent } from './cgv/cgv.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FormulesComponent } from './formules/formules.component';
     InscriptionComponent,
     ValeursComponent,
     FormulesComponent,
+    CgvComponent,
   ],
   imports: [
     BrowserModule,
