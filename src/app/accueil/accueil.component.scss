@@ -3,7 +3,7 @@
 .accueil {
   .logo-container {
     .logo img {
-      width: 25%;
+      width: 50%;
       margin: 2rem;
     }
   }
@@ -36,6 +36,15 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .dessins {
+    margin: 2rem 0 0;
+    .avion img {
+      width: 100%;
+    }
+    .horus img {
+      width: 25%;
+    }
+  }
   .by-who {
     padding: 4rem 0 2rem;
     .by-who-container {
@@ -49,6 +58,9 @@
           object-fit: cover;
           margin-bottom: 1rem;
         }
+      }
+      .ecritures img {
+        width: 100%;
       }
     }
     .by-who-text {
@@ -125,21 +137,21 @@
     ::ng-deep .mat-mdc-tab .mdc-tab-indicator__content--underline {
       border-color: white !important;
     }
-    .garanties{
+    .garanties {
       background-image: url(./../../../public/garanties.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
     }
   }
-  .pedagogy-mobile{
-    > div{
+  .pedagogy-mobile {
+    > div {
       margin: 1rem;
-      h4{
-        color: $yellow
+      h4 {
+        color: $yellow;
       }
-      p{
-        color: $base-color
+      p {
+        color: $base-color;
       }
     }
   }
@@ -192,7 +204,15 @@
     }
     .logo-container {
       .logo img {
-        width: 45%;
+        width: 60%;
+      }
+    }
+    .by-who {
+      .by-who-container {
+        .ecritures img {
+          margin-top: 2rem;
+          width: 50%;
+        }
       }
     }
   }
@@ -207,7 +227,7 @@
     }
     .logo-container {
       .logo img {
-        width: 60%;
+        width: 75%;
       }
     }
     .image1 {
@@ -218,7 +238,7 @@
         height: 400px;
       }
     }
-    .garanties{
+    .garanties {
       margin-top: 3rem;
       height: 300px;
     }
@@ -239,12 +259,30 @@
   .accueil {
     .logo-container {
       .logo img {
-        width: 80%;
+        width: 85%;
       }
     }
     .benefices {
       .img-class {
         height: 250px;
+      }
+    }
+    .dessins {
+      .avion img {
+        width: 50%;
+      }
+      .ecriture img {
+        width: 50%;
+      }
+      .horus img {
+        width: 20%;
+      }
+    }
+    .by-who {
+      .by-who-container {
+        .ecritures img {
+          width: 80%;
+        }
       }
     }
   }

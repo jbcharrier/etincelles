@@ -45,5 +45,11 @@
   }
   .etablissements{
     background-color: $yellow-background;
+    .dessin{
+      img{
+        margin-top:1rem;
+        width: 5rem;
+      }
+    }
   }
 }
