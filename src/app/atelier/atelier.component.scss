@@ -43,7 +43,8 @@
         background-image: url("./../../../public/barbu.png");
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: right;
+        background-position-x: left;
+        background-position-y: center;
       }
       .exemple {
         span {
@@ -109,8 +110,11 @@
         .barbu {
           height: 8rem;
           background-position: center;
-          margin-bottom: 2rem;
+          margin-top: 3rem;
         }
+      }
+      .illustration {
+        margin: 3rem 0 2rem 0;
       }
     }
   }
