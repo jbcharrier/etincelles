@@ -2,9 +2,12 @@
 
 .accueil {
   .logo-container {
-    .logo img {
-      width: 50%;
-      margin: 1rem;
+    .logo{
+      padding: 0;
+      img {
+        width: 50%;
+        margin: 1rem;
+      }
     }
   }
   .citation {
@@ -258,8 +261,11 @@
 @media (max-width: 575px) {
   .accueil {
     .logo-container {
-      .logo img {
-        width: 85%;
+      .logo {
+        img {
+          width: 85%;
+          margin: 1rem 0
+        }
       }
     }
     .benefices {
