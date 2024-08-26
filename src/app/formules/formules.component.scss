@@ -8,14 +8,10 @@
       color: white;
       margin: 2rem;
     }
-    h4.mention{
-      margin-top: 3rem;
+    .mention{
+      margin-top: 5rem;
       font-style: italic;
-      span {
-        cursor: pointer;
-        text-decoration: underline;
-        color: $base-color
-      }
+      color: black
     }
     .first,
     .second {

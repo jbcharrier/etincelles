@@ -26,9 +26,7 @@
               <p class="card-text">
                 <i class="bi bi-people-fill"></i>12 élèves maximum
               </p>
-              <p class="card-text special">
-                Cours d’essai gratuit les 28 août et 4 septembre.
-              </p>
+              <p class="card-text special">Cours d’essai gratuit</p>
             </div>
           </div>
         </div>
@@ -50,9 +48,7 @@
               <p class="card-text">
                 <i class="bi bi-people-fill"></i>12 élèves maximum
               </p>
-              <p class="card-text special">
-                Cours d’essai gratuit les 28 août et 4 septembre.
-              </p>
+              <p class="card-text special">Cours d’essai gratuit</p>
             </div>
           </div>
         </div>
@@ -181,12 +177,22 @@
       </div>
       <div class="row justify-content-center first">
         <div class="col">
-          <h4 class="mention">
-            Conditions et tarifs des différentes formules sur demande (<span
-              [routerLink]="'/inscription'"
-              >page inscription</span
-            >)
-          </h4>
+          <h1 class="mention">
+            Conditions et tarifs des différentes formules :
+          </h1>
+          <div
+            *ngIf="screenWidth > 750"
+            class="offset-xl-2 offset-lg-1 col-xl-8 col-lg-10 col-md-12"
+          >
+            <iframe
+              width="100%"
+              height="{{ iframeHeight }}"
+              src="https://docs.google.com/document/d/14us1NWUouIW7hUV2g36IRnRwC--luOze/pub?embedded=true"
+            ></iframe>
+          </div>
+          <div *ngIf="screenWidth <= 750">
+            <a href="https://docs.google.com/document/d/14us1NWUouIW7hUV2g36IRnRwC--luOze/pub">Cliquez sur ce lien pour accéder à la page</a>
+          </div>
         </div>
       </div>
       <div class="row justify-content-center">
